@@ -30,7 +30,7 @@ client.on('ready', () => {
 		.setColor('#e98205')
 		.setTitle('Roolien tunnukset:')
 		.setDescription(
-			`<${emojis.beeangery}> = <@&${roles.beeangery}>\n<${emojis.OwOmen}> = <@&${roles.OwOmen}>\n<${emojis.Angery}> = <@&${roles.Angery}>\n<${emojis.Borpagun}> = <@&${roles.Borpagun}>\n<${emojis.nobuild}> = <@&${roles.nobuild}>\n<${emojis.highfive}> = <@&${roles.highfive}>\n<${emojis.peepoparty}> = <@&${roles.peepoparty}>\n<${emojis.trumpW}> = <@&${roles.trumpW}>\n`,
+			`<${emojis.beeangery}> = <@&${roles.beeangery}>\n<${emojis.OwOmen}> = <@&${roles.OwOmen}>\n<${emojis.Angery}> = <@&${roles.Angery}>\n<${emojis.Borpagun}> = <@&${roles.Borpagun}>\n<${emojis.nobuild}> = <@&${roles.nobuild}>\n<${emojis.highfive}> = <@&${roles.highfive}>\n<${emojis.trumpW}> = <@&${roles.trumpW}>\n<${emojis.peepoparty}> = <@&${roles.peepoparty}> juhla_pelit (jackbox.tv, gartic phone, skribbl.io, yms.)`,
 		)
 		.setImage('https://i.imgur.com/swvOSqw.jpeg')
 		.setFooter({ text: 'Lisää itsesi rooliin reagoimalla alta:', iconURL: 'https://i.imgur.com/V1pm6qE.png' });
@@ -52,8 +52,8 @@ client.on('ready', () => {
 		message.react(emojis.Borpagun);
 		message.react(emojis.nobuild);
 		message.react(emojis.highfive);
-		message.react(emojis.peepoparty);
 		message.react(emojis.trumpW);
+		message.react(emojis.peepoparty);
 
 		const filter = (reaction, user) => {
 			return emojinames.includes(reaction.emoji.name) && user.id !== message.author.id;
